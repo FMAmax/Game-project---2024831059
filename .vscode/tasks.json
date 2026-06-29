@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build snake",
+            "type": "process",
+            "command": "C:\\raylib\\w64devkit\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "-B",
+                "C:\\raylib\\w64devkit\\bin",
+                "-static",
+                "-static-libgcc",
+                "-static-libstdc++",
+                "${workspaceFolder}\\src\\main.cpp",
+                "-o",
+                "${workspaceFolder}\\snake.exe",
+                "-I",
+                "C:\\raylib\\raylib\\src",
+                "-L",
+                "C:\\raylib\\raylib\\src",
+                "-lraylib",
+                "-lopengl32",
+                "-lgdi32",
+                "-lwinmm"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
