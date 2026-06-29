@@ -9,8 +9,8 @@ Color dark_green={43,51,54,255};
 Color blue={21,115,178,255};
 
 const int CELL_SIZE=30;
-const int GRID_WIDTH=30;
-const int GRID_HEIGHT=30;
+const int GRID_WIDTH=40;
+const int GRID_HEIGHT=40;
 
 int main()
 {
@@ -27,7 +27,7 @@ int main()
     
         BeginDrawing();
         ClearBackground(white_tan);
-        // DrawText("Snake - press ESC to quit", 10, 10, 20, RAYWHITE);
+        
         EndDrawing();
     }
 
